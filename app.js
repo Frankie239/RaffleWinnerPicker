@@ -33,7 +33,7 @@ function LoadWinnersTable(winnerQuantity)
 
         for (let i = 0; i < winnerQuantity; i++)
         {
-            winnnersTable.innerHTML += '<tr> <td>winner</td> <td>winner</td> </tr>';
+            winnnersTable.innerHTML += '<tr class ="winner"> <td>winner</td> <td>winner</td> </tr>';
                  
         }
         console.log(winnnersTable.innerHTML);
