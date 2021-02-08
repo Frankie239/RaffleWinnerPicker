@@ -1,5 +1,5 @@
 const JSON_PATH = "comments.json";
-import comments from "/comments.json";
+
 function DraftWinners()
 {
 
@@ -35,12 +35,22 @@ function LoadWinnersTable(winnerQuantity)
 
         for (let i = 0; i < winnerQuantity; i++)
         {
-            winnnersTable.innerHTML += '<tr class ="winner"> <td>@loremIpsumDolor</td> </tr>';
+            if(i== 0)
+            {
+                winnnersTable.innerHTML += '<tr class ="winner"> <td>@MissJulyJuly</td> </tr>';
                  
+            }
+            else{
+                winnnersTable.innerHTML += '<tr class ="winner"> <td>@loremIpsumDolor</td> </tr>';
+                 
+            }
+            
         }
         console.log(winnnersTable.innerHTML);
-        console.log(JSON.parse())
+       
     }
+
+    ExtractCommentsFromJson();
    
 
     
@@ -49,7 +59,10 @@ function LoadWinnersTable(winnerQuantity)
 
 function ExtractCommentsFromJson()
 {
-    //! POSIBLE fetch('./comments.json').then(results => results.json()).then(console.log);
+    fetch('./comments.json')
+    .then(results => results.json())
+    .then(console.log);
+    
 }
 
 

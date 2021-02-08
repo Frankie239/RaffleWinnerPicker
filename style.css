@@ -183,6 +183,8 @@
     .winner:first-child{
         border-top: none;
     }
-    
+    #text{
+        width: 86%;
+    }
 
 }
