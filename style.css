@@ -1,0 +1,179 @@
+@media only screen and (max-width: 600px) {
+    /*Trying to get the scrolling smoot*/
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        /*Background color to imitate the instagram's background gradient*/
+        background-image:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        width: 100%;
+        height:1000px;
+        align-items: center;
+        display: flex;
+        flex-direction: column ;
+       
+        font-family: "Helvetica";
+        
+    }
+    h4
+    {
+        font-family: "Helvetica";
+    }
+    
+    #navbar
+    {
+        height: 54px;
+        width: 100%;
+        background-color: whitesmoke;
+        margin: 0;
+        display: flex;
+        align-items:center;
+        
+    }
+
+    #ticket{
+        margin: 0%;
+        padding: 0%;
+
+        font-size: 26px;
+        color: whitesmoke;
+    }
+    #mainContent
+    {   
+        background-color: white;
+        height: 226px;
+        width: 85%;
+        margin-top: 10%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 3px 4px 4px #00000063;
+        
+    }
+
+    #container {
+        background-color: #a19f9f;
+        width: 40px;
+        height: 40px;
+        box-shadow: 3px 1.5px 3px #02020291;
+        border-radius: 6px;
+        background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 13px;
+    }
+
+    #quantity{
+        width: 12px;
+    }
+
+    .formCapsule
+    {
+        display:flex;
+        background-color: #5851db;
+        width: 80%;
+        height: 30px;
+    }
+
+    tr:nth-child(even){
+        background-color: #d2d1d1a8;
+    }
+    tr{
+        height: 32px;
+        
+    }
+    .commenter{
+        width: 50%;
+        font-size: inherit;
+    }
+    td:nth-child(even){
+        color:#4a4a4a;
+    }
+    .formCapsule input {
+        border:none;
+        background-color: #fff0;
+    }
+  
+    table{ 
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .scroll {
+        background-color: #ffffff;
+        width: 95%;
+        height: 130px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        border-radius: 3%;
+        
+        scroll-behavior: smooth;
+    
+        
+    }
+
+    #numberQuantity
+    {
+        width: 35%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #counter{
+        padding: 8%;
+    }
+
+
+    .sec-container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-top: 7%;
+       
+        border-radius: 15px;
+        box-shadow: 3px 4px 4px #00000063;
+        width: 68%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #winnerButton
+    {
+        padding: 1%;
+        background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    }
+
+    #winnerButton input
+    {
+        color: white;
+        flex-direction: row;
+        border:none ;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 3%;
+        width: 95%;
+        font-weight: bolder;
+        
+    }
+    .fa-instagram{
+        color: white;
+        font-size: 29px;
+    }
+    
+    #winnerButton input:focus
+    {
+        border: none;
+    }
+
+    #winners
+    {
+        background-color: white;
+    }
+
+}

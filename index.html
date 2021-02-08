@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Raffle machine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9a2b65ee6c.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div id="container"><i class="fas fa-ticket-alt" id="ticket"></i></div>
+        
+        <h4>Instagram picker</h4>
+
+    </div>
+    <div id="mainContent">
+        <h3>Participants</h3>
+        <div class="scroll">
+
+            <!--To Further automate-->
+            <table style="width: 100%;">
+               
+                
+                <tr>
+                    <td class="commenter">@someone</td>
+                    <td>comment</td>
+                </tr>
+                    
+                <tr> <td class="commenter">@someone</td>
+                    <td>comment</td></tr>
+                <tr> <td class="commenter">@someone</td>
+                    <td>comment</td></tr>
+                <tr> <td class="commenter">@someone</td>
+                    <td>comment</td></tr>
+                <tr> <td class="commenter">@someone</td>
+                    <td>comment</td></tr>
+                <tr> <td class="commenter">@someone</td>
+                    <td>comment</td></tr>
+                <tr> <td class="commenter">@someone</td>
+                    <td>comment</td></tr>
+                <tr> <td class="commenter">@someone</td>
+                    <td>comment</td></tr>
+                <tr> <td class="commenter">@someone</td>
+                    <td>comment</td></tr>
+                <tr> <td class="commenter">@someone</td>
+                    <td>comment</td></tr>
+            </table>
+    
+        </div>
+    </div>
+
+    <form action=""></form>
+
+    <div class="sec-container" id="counter">
+        <label for="quantity" style="font-weight: bold;">Quantity:</label>
+        <input type="number" name="" placeholder="Winners" id="numberQuantity" ></input>
+    </div>
+
+    <div class="sec-container" id="winnerButton" onclick="DraftWinners()" >
+        <i class="fab fa-instagram" ></i>
+       <input type="button"  value="Draft Winners">
+    </div>
+        
+
+    <div class="sec-container" id="winners">
+        <table id="winnersTable">
+           
+        </table>
+    </div>
+        
+            
+        
+</body>
+</html>
