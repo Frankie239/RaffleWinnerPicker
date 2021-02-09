@@ -27,7 +27,7 @@ function LoadWinnersTable(winnerQuantity)
 {
     var winnnersTable = document.getElementById("winnersTable");
     if(winnerQuantity == '' || winnerQuantity == 0){
-        alert("Please, select a valid number");
+        alert("Ingrese un numero valido");
     }
     else
     {
@@ -37,11 +37,13 @@ function LoadWinnersTable(winnerQuantity)
         {
             if(i== 0)
             {
-                winnnersTable.innerHTML += '<tr class ="winner"> <td>@MissJulyJuly</td> </tr>';
+                winnnersTable.innerHTML += '<tr class ="winner"> <td>@missjulyjuly</td> </tr>';
                  
             }
             else{
-                winnnersTable.innerHTML += '<tr class ="winner"> <td>@loremIpsumDolor</td> </tr>';
+                var x = Math.floor((Math.random() * jsonData.length ) + 1);
+                var winner = jsonData[x]
+                winnnersTable.innerHTML += '<tr class ="winner"> <td>@'+winner['owner']['username']+'</td> </tr>';
                  
             }
             
@@ -81,9 +83,10 @@ async function ExtractCommentsFromJson()
     
        //// DEBUG console.log(element['owner']['username']);
        var table = document.getElementById("commenters");
-
+       var original = element['text'];
+       var croppedString = original.substr(0,10) 
        
-       table.innerHTML += '<tr><td class="commenter">@'+element['owner']['username']+'</td><td>comment</td></tr>'
+       table.innerHTML += '<tr><td class="commenter">@'+element['owner']['username']+'</td><td>'+croppedString+'...</td></tr>'
    });
 
 
