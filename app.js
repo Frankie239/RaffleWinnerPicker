@@ -1,5 +1,5 @@
 const JSON_PATH = "comments.json";
-
+var jsonData;
 function DraftWinners()
 {
 
@@ -57,13 +57,44 @@ function LoadWinnersTable(winnerQuantity)
 }
 
 
-function ExtractCommentsFromJson()
+async function ExtractCommentsFromJson()
 {
-    fetch('./comments.json')
-    .then(results => results.json())
-    .then(console.log);
+
+    var index = 0;
+
+    /**
+     *  fetch('./comments.json')
+        .then(results => results.json())
+        .then(console.log);
+    */
+
+    
+   var data = await fetch('./comments.json')
+
+   jsonData = await data.json()
+
+   //// DEBUG console.log(jsonData);
+
+
+   jsonData.forEach(element => {
+
+    
+       //// DEBUG console.log(element['owner']['username']);
+       var table = document.getElementById("commenters");
+
+       
+       table.innerHTML += '<tr><td class="commenter">@'+element['owner']['username']+'</td><td>comment</td></tr>'
+   });
+
+
+
+
+
+    
     
 }
+
+
 
 
     

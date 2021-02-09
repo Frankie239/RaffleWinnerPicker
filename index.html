@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9a2b65ee6c.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <script type="text/javascript" src="comments.json"></script>
+    
 </head>
-<body>
+<body onload="ExtractCommentsFromJson()">
     <div id="navbar">
         <div id="container"><i class="fas fa-ticket-alt" id="ticket"></i></div>
         
@@ -17,7 +17,7 @@
 
     </div>
     <div id="text" class="sec-container">
-        <p>Mediante el sistema <strong>R.U.L.O </strong><i>(Random Unity Locking entity<sup>TM</sup>)</i>
+        <p>Mediante el sistema <strong>R.U.L.O </strong><i>(Random Unity Locking object<sup>TM</sup>)</i>
         se elegirá a los ganadores del sorteo por un e-Book del libro <strong><u>"Viaje a la tierra de los pelos lacios"</u></strong>
          Este es un sistema infalible en donde nada esta arreglado y los participantes son completamente elegidos al azar.</p>
     </div>  
@@ -27,32 +27,10 @@
         <div class="scroll">
 
             <!--To Further automate-->
-            <table style="width: 100%;">
+            <table id="commenters" style="width: 100%;">
                
                 
-                <tr>
-                    <td class="commenter">@someone</td>
-                    <td>comment</td>
-                </tr>
-                    
-                <tr> <td class="commenter">@someone</td>
-                    <td>comment</td></tr>
-                <tr> <td class="commenter">@someone</td>
-                    <td>comment</td></tr>
-                <tr> <td class="commenter">@someone</td>
-                    <td>comment</td></tr>
-                <tr> <td class="commenter">@someone</td>
-                    <td>comment</td></tr>
-                <tr> <td class="commenter">@someone</td>
-                    <td>comment</td></tr>
-                <tr> <td class="commenter">@someone</td>
-                    <td>comment</td></tr>
-                <tr> <td class="commenter">@someone</td>
-                    <td>comment</td></tr>
-                <tr> <td class="commenter">@someone</td>
-                    <td>comment</td></tr>
-                <tr> <td class="commenter">@someone</td>
-                    <td>comment</td></tr>
+                
             </table>
     
         </div>
