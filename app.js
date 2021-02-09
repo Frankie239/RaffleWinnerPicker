@@ -52,8 +52,7 @@ function LoadWinnersTable(winnerQuantity)
        
     }
 
-    ExtractCommentsFromJson();
-   
+    
 
     
 }
@@ -86,7 +85,7 @@ async function ExtractCommentsFromJson()
        var original = element['text'];
        var croppedString = original.substr(0,10) 
        
-       table.innerHTML += '<tr><td class="commenter">@'+element['owner']['username']+'</td><td>'+croppedString+'...</td></tr>'
+       table.innerHTML += '<tr class="winner"><td class="commenter">@'+element['owner']['username']+'</td><td>'+croppedString+'...</td></tr>'
    });
 
 

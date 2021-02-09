@@ -181,8 +181,8 @@
     }
     .winner
     {
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
+        border-top: 1px solid #8080803d;
+        border-bottom: 1px solid #8080803d;
     }
     .winner:first-child{
         border-top: none;
